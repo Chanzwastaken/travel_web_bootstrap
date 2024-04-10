@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Result</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5 mb-4">Flight Results</h1>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Available Flights</h5>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Flight</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Price</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Singapore Airlines</td>
+                    <td>09:00 AM</td>
+                    <td>12:00 PM</td>
+                    <td>Rp. 15.750.000</td>
+                    <td><a href="bform.html" class="btn btn-primary">Book Now</a></td>
+                  </tr>
+                  <tr>
+                    <td>Emirates</td>
+                    <td>13:00 AM</td>
+                    <td>16:00 PM</td>
+                    <td>Rp. 11.500.000</td>
+                    <td><a href="bform.html" class="btn btn-primary">Book Now</a></td>
+                  </tr>
+                  <tr>
+                    <td>Qatar Airways</td>
+                    <td>17:00 AM</td>
+                    <td>20:00 PM</td>
+                    <td>Rp. 8.900.000</td>
+                    <td><a href="bform.html" class="btn btn-primary">Book Now</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Filters</h5>
+            <!-- Add filters here -->
+            <div class="form-group">
+              <label for="filterAirline">Airline:</label>
+              <select class="form-control" id="filterAirline">
+                <option>All Airlines</option>
+                <option>Singapore Airlines</option>
+                <option>Emirates</option>
+                <option>Qatar Airways</option>
+                <!-- Add more options if needed -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="filterPrice">Price Range:</label>
+              <input type="range" class="form-control-range" id="filterPrice" min="0" max="1000" step="50">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
