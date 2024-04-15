@@ -1,0 +1,25 @@
+.nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(99, 99, 255);
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+  }
+
+  .mask-custom {
+    backdrop-filter: blur(8px);
+    background-color: rgba(50, 50, 50, 0.4);
+    border-radius: 10px;
+  }
