@@ -8,8 +8,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="stylee.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="bg-black">
+  
     <!-- -------------navbar--------- -->
     <nav
       class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark"
@@ -62,54 +64,74 @@
       </div>
     </nav>
     <!-- ----------navbar end ----- -->
-  <div class="container ">
-    <h1 class="mt-5 mb-4 text-light">Available Flight</h1>
-    <div class="row">
-      <div class="col-md-8">
-        <div class="card text-bg-dark">
-          <div class="card-body">
-            <div class="table-responsive">
-              <table class="table table-dark">
-                <thead>
-                  <tr>
-                    <th>Flight</th>
-                    <th>Departure</th>
-                    <th>Arrival</th>
-                    <th>Price</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Singapore Airlines</td>
-                    <td>09:00 AM</td>
-                    <td>12:00 PM</td>
-                    <td>Rp. 15.750.000</td>
-                    <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</button></td>
-                  </tr>
-                  <tr>
-                    <td>Emirates</td>
-                    <td>13:00 AM</td>
-                    <td>16:00 PM</td>
-                    <td>Rp. 11.500.000</td>
-                    <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</button></td>
-                  </tr>
-                  <tr>
-                    <td>Qatar Airways</td>
-                    <td>17:00 AM</td>
-                    <td>20:00 PM</td>
-                    <td>Rp. 8.900.000</td>
-                    <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Book Now</button></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
-
+    <div class="container">
+      <h1 class="mt-5 mb-4 text-light">Available Flight</h1>
+      <div class="row">
+          <div class="col-md-10">
+              <div class="card mb-3 p-2">
+                  <div class="card-body d-flex align-items-center">
+                    <div class="row">
+                    <img  class="col" style="width: auto; height: 100px; object-fit: contain;" src="singapore_airlines.png">
+                    <div><h5 class="col d-flex text-align-center justify-content-center">Singapore Airlines</h5></div>
+                  </div>
+                    <div class="me-auto">
+                        <div class="d-flex justify-content-between">
+                          <div class="row">
+                              <div class="col-lg-4"><strong>Departure:</strong> 09:00 AM</div>
+                              <div class="col-lg-4"><strong>Arrival:</strong> 12:00 PM</div>
+                              <div class="col-lg-4"><strong>Price:</strong> <span class="text-danger">Rp. 15.750.000</span></div>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                              <div class="ms-4 text-success "><strong>Reschedule</strong></div>
+                              <div class="ms-4 text-success"><strong>Refund</strong> </div>
+                              <div class="ms-4"><i class="fa fa-snowflake-o" aria-hidden="true"></i> <i class="fa fa-usb" aria-hidden="true"></i> <i class="fa fa-suitcase" aria-hidden="true"></i> <i class="fa fa-cutlery" aria-hidden="true"></i> <i class="fa fa-film" aria-hidden="true"></i></div>
+                          </div>
+                      </div>
+                      <button class="btn btn-primary"><i class="bi bi-bookmark"></i> Book Now</button>
+                  </div>
+              </div>
+              <div class="card mb-3 p-2">
+                  <div class="card-body d-flex align-items-center">
+                    <img style="width: auto; height: 50px; object-fit: contain;" src="qatar.jpeg">
+                    <h3 class="ms-3 text-center">Qatar Airways</h3>
+                    <div class="me-auto">
+                        <div class="d-flex justify-content-between">
+                              <div class="ms-4"><strong>Departure:</strong> 09:00 AM</div>
+                              <div class="ms-4"><strong>Arrival:</strong> 12:00 PM</div>
+                              <div class="ms-4"><strong>Price:</strong> <span class="text-danger">Rp. 15.750.000</span></div>
+                          </div>
+                        <div class="d-flex justify-content-between">
+                              <div class="ms-4 text-success "><strong>Reschedule</strong></div>
+                              <div class="ms-4 text-success"><strong>Refund</strong> </div>
+                              <div class="ms-4"><i class="fa fa-snowflake-o" aria-hidden="true"></i> <i class="fa fa-usb" aria-hidden="true"></i> <i class="fa fa-suitcase" aria-hidden="true"></i> <i class="fa fa-cutlery" aria-hidden="true"></i> <i class="fa fa-film" aria-hidden="true"></i></div>
+                          </div>
+                      </div>
+                      <button class="btn btn-primary"><i class="bi bi-bookmark"></i> Book Now</button>
+                  </div>
+              </div>
+              <div class="card mb-3">
+                  <div class="card-body d-flex align-items-center">
+                    <img style="width: 10%; height: auto;" src="fly-emirates-logo.png">
+                    <h3 class="text-center">Emirates</h3>
+                    <div class="me-auto">
+                        <div class="d-flex justify-content-between">
+                              <div class="ms-4"><strong>Departure:</strong> 09:00 AM</div>
+                              <div class="ms-4"><strong>Arrival:</strong> 12:00 PM</div>
+                              <div class="ms-4"><strong>Price:</strong> <span class="text-danger">Rp. 15.750.000</span></div>
+                          </div>
+                        <div class="d-flex justify-content-between">
+                              <div class="ms-4 text-success "><strong>Reschedule</strong></div>
+                              <div class="ms-4 text-success"><strong>Refund</strong> </div>
+                              <div class="ms-4"><i class="fa fa-snowflake-o" aria-hidden="true"></i> <i class="fa fa-usb" aria-hidden="true"></i> <i class="fa fa-suitcase" aria-hidden="true"></i> <i class="fa fa-cutlery" aria-hidden="true"></i> <i class="fa fa-film" aria-hidden="true"></i></div>
+                          </div>
+                      </div>
+                      <button class="btn btn-primary"><i class="bi bi-bookmark"></i> Book Now</button>
+                  </div>
+              </div>
+              
 
 
 
