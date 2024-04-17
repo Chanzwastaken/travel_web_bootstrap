@@ -23,3 +23,25 @@
     background-color: rgba(50, 50, 50, 0.4);
     border-radius: 10px;
   }
+
+  .airline-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .airline-name {
+    margin-left: 20px;
+  }
+  
+  .flight-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .amenities i {
+    margin-right: 5px;
+  }
